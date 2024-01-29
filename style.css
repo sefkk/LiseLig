@@ -1,0 +1,196 @@
+/* style.css */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* existing styles */
+    background: linear-gradient(-45deg, #0f0f0f, #401515, #7a0909, #400101);
+    background-size: 400% 400%;
+    animation: gradientBG 14s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 30%; }
+    50% { background-position: 100% 60%; }
+    100% { background-position: 3% 60%; }
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #ff3333; /* Red Color */
+    margin-bottom: 20px;
+    font-size: 36pt;
+}
+
+#logo1 {
+    position: absolute;
+    left: 5%; /* Adjust margin as needed */
+    top: 20px;
+    height: 100px; /* Adjust size as needed */
+    width: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+/*
+.nav-link:hover {
+    background-color: rgba(255, 51, 51, 0.2);
+}
+*/
+
+.nav-link:hover, .nav-link:focus {
+    color: #a42424; /* Red Color */
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #a42424;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    font-size: 16pt;
+    justify-content: space-between;
+}
+
+nav ul li a:hover {
+    color: #a42424;
+}
+
+#ataturk {
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    width: 350px; /* Adjust as needed */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    transition: 1s;
+}
+
+#ataturk:hover {
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    width: 450px; /* Adjust as needed */
+    box-shadow: 0 0 45px 45px rgba(255, 255, 255, 1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.gallery img {
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+}
+
+section {
+    background-color: #1e1e1e;
+    margin: 20px 5%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+h2 {
+    color: #ff3333;
+    border-bottom: 2px solid #ff3333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/*
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.container {
+    padding: 2px 16px;
+}
+*/
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    bottom: 0;
+    position: static;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff3333;
+}
+
+
+/* Add animations for links */
+@keyframes linkFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*
+nav ul li a {
+    animation: linkFadeIn 0.2s ease forwards;
+}
+*/
